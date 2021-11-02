@@ -107,4 +107,5 @@ body {
     height: 60px;
     line-height: 60px;
     white-space: nowrap;
+    text-transform: capitalize;
 }
