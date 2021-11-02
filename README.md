@@ -14,7 +14,9 @@ BONUS:  La page affiche de nouveau mots à chaque frappe du clavier
 
 Challenge 2 => menuAdministrator :
 
-Réalisation d'un menu administrateur style panel left (voirimage)
+Réalisation d'un menu administrateur style panel left (voir image)
+
+![image](https://user-images.githubusercontent.com/68891109/139862159-f8ee5189-bfcc-44be-9d6f-0fd032f888f5.png)
 
 - Le menu contiendra au moins 5 liens factices,
 - Il devra être de couleur "niagara",
@@ -24,4 +26,4 @@ Réalisation d'un menu administrateur style panel left (voirimage)
 
 --> PAS DE jQuery, pas de Bootstrap
 BONUS: Lorsque l'utilisateur quitte le navigateur et le ré-ouvre, la taille du panel est restaurée (valeurs du dernier changement de taille)
-![image](https://user-images.githubusercontent.com/68891109/139862159-f8ee5189-bfcc-44be-9d6f-0fd032f888f5.png)
+
