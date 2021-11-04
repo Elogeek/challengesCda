@@ -26,11 +26,48 @@ html {
 }
 
 input {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 36rem;
     padding: 1rem;
+    border-radius: 3rem;
+    border-style: solid;
 }
 
 #suggestions:hover {
     background-color: deepskyblue;
+}
+
+/* Design wordle */
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 10rem;
+    position: absolute;
+    top: 22rem;
+}
+
+.blue {
+    color: #4285f4;
+}
+
+.red {
+    color: #ea4335;
+}
+.yellow {
+    color: #fbbc05;
+}
+.green {
+    color: #34a853;
+}
+
+/* Design loupe */
+.icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40rem;
+    left: 16rem;
+    font-size: 3rem;
 }
