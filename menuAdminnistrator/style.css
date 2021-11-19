@@ -93,9 +93,9 @@ body {
 }
 
 /* Design icons */
-.menu .icon ion-icon {
+ .icon box-icon{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
     z-index: 1;
 }
 
