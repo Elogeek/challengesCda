@@ -1,0 +1,48 @@
+/** General style */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    display: flex;
+}
+
+#menuVisiteur {
+    background-color: darkgray;
+    border: 3px solid turquoise;
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+#menuVisiteur div {
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}
+
+#menuVisiteur > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1.5rem;
+}
+
+#menuVisiteur li, #menuVisiteur a {
+    width: 24.5rem;
+    color: darkcyan;
+    font-weight: bold;
+    text-decoration-line: none;
+    font-size: large;
+
+}
