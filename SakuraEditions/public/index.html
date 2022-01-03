@@ -2,13 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
-    <link rel="stylesheet" href="../assets/css/menu.css">
+    <title>Sakura Editions</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script src="https://kit.fontawesome.com/e3ddf954eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <div id="menuVisiteur"></div>
+    <div id="menu">
+
+        <a  id="logo-style" href="/index.html"><img id ="logo" src="../assets/img/logo.png" alt="logo">
+            TOUT savoir sur le Japon</a>
+        <ul>
+            <li><a title="Home" href="/index.html">Home</a></li>
+            <li><a title="newArticles" href="">À la une</a></li>
+            <li><a title="articles" href="">Articles</a></li>
+            <li><a  id="theme" title="theme" href="">Theme</a></li>
+        </ul>
+
+    </div>
+
+    <ul class="articles">
+        <li class="article">
+            <div class="visible-article">
+                <div class="right">
+                    <img src="../assets/img/defaultImgArticle.jpg" alt="default">
+                </div>
+                <div class="left">
+                    <a href="/index.html" title="category-artcl">TOURISME</a>
+                    <h2 class="titleArticle">Etudier au japon</h2>
+                    <p class="contentArticle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusamus alias architecto atque blanditiis dicta,...
+                    </p>
+                    <p class="hidden-article">
+                        dolores eius exercitationem, expedita fugiat illum itaque
+                        officia pariatur placeat porro quis sed ut veritatis voluptatibus.
+                    </p>
+                    <p class="publishingDateArticle">Il y a 2 heures</p>
+                </div>
+            </div>
+
+        </li>
+
+    </ul>
 
 
-    <script src="../assets/js/menu.js"></script>
+    <div class="footer">
+        <div>Nous suivre !</div>
+
+        <div class="share">
+            <div>
+                <a title="Twitter" target="_blank" href="https://twitter.com">
+                    <i id="twitter" class="fab fa-twitter-square"></i>
+                </a>
+
+            </div>
+
+            <div>
+                <a title="Facebook" target="_blank" href="https://www.facebook.com">
+                    <i id="facebook" class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+
+            <div>
+                <a target="_blank" title="Instagram" href="https://www.instagram.com">
+                    <i id="insta" class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.pinterest.fr" title="Pinterest" target="_blank">
+                    <i id="printerest" class="fab fa-pinterest-square"></i>
+                </a>
+            </div>
+        </div>
+        <div id="copyright">&copy; 2021 Elogeek, tous droits réservés.</div>
+
+    </div>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
+
