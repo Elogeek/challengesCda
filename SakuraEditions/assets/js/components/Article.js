@@ -6,7 +6,7 @@ export class Article {
      * Constructor
      */
     constructor() {
-        this.divContainer = document.createElement("div");
+        this.container = document.createElement("div");
         this.right = document.createElement("div");
         this.left = document.createElement("div");
         this.categoryArticle = document.createElement("a");
@@ -63,6 +63,6 @@ export class Article {
         let articles = document.createElement("div");
         articles.className = "articles";
 
-        articles.appendChild(this.divContainer);
+        articles.appendChild(this.container);
     }
 }
