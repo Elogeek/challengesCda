@@ -24,8 +24,8 @@ new Link("./assets/img/icon13.png", "img13", "_blank", "Intellij Idea");
 new Link("./assets/img/icon14.png", "img14", "_blank", "Spotify");
 new Link("./assets/img/icon15.png", "img15", "_blank", "Steam");
 new Link("./assets/img/icon16.png", "img16", "_blank", "Terminal");
-new Link("./assets/img/icon17.png", "img17", "_blank", "Google Docs");
-
+new Link("./assets/img/icon17.png", "img17", "_blank", "Photos");
+new Link("./assets/img/icon18.png", "img18", "_blank", "Manga");
 
 
 
