@@ -13,7 +13,6 @@ new Link("./assets/img/icon2.png", "img2", "_blank", "AppStore");
 new Link("./assets/img/icon3.png", "img3","_blank", "Blender");
 new Link("./assets/img/icon4.png", "img4", "_blank", "Calculator");
 new Link("./assets/img/icon5.png", "img5", "_blank", "Calendar");
-new Link("./assets/img/icon6.png", "img6", "_blank", "ChatDev");
 new Link("./assets/img/icon7.png", "img7", "_blank", "Discord");
 new Link("./assets/img/icon8.png", "img8", "_blank", "Docker");
 new Link("./assets/img/icon9.png", "img9", "_blank", "Duolingo");
