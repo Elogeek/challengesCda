@@ -1,1 +1,3 @@
-export let MacDock = function(x){}
+ export default MacDock = function (x) {
+
+}

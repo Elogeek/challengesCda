@@ -52,3 +52,24 @@ img {
     height: 80px;
     border-radius: 15px;
 }
+
+/**.tooltip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+    padding: 2px;
+    height: 4rem;
+    display: none;
+}
+*/
+.text {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: none;
+
+}
