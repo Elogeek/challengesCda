@@ -8,8 +8,10 @@ html,body {
 }
 
 .layout {
+    /** Limit width of the menu **/
+    --slidebarClamped: clamp(300px, var(--slidebar), 50vw);
     display: grid;
-    grid-template-columns: var(--slidebar) 1fr;
+    grid-template-columns: var(--slidebarClamped) 1fr;
     height: 100%;
 }
 
@@ -30,7 +32,7 @@ html,body {
 
 .sidebar {
     position: relative;
-    background: #000d4c;
+    background: purple;
     box-shadow: inset -2px 0 20px rgba(0, 0, 0, 0.2);
 }
 
