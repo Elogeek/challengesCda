@@ -6,11 +6,11 @@ const sidebar_width = "sidebarWidth"
  * @param cb called on resize with the offsetX parameter
  */
 function menuResize(element, cb) {
-    // Lorsque l'on clique sur l'élément
+    // When you click on the element
     element.addEventListener('pointerdown',onPointerDown);
 
     /**
-     * On commence à écouter le déplacement du curseur
+     * start listening to cursor movement
      * @param {PointerEvent} e
      */
     function onPointerDown(e) {
@@ -20,7 +20,7 @@ function menuResize(element, cb) {
     }
 
     /**
-     * Au déplacement du curseur, on met à jour la largeur de la sidebar
+     * When moving the cursor, updates the width of the sidebar
      * @param {PointerEvent} e
      */
     function onPointerMove(e) {
@@ -29,7 +29,7 @@ function menuResize(element, cb) {
     }
 
     /**
-     * Lorsque le curseur est relaché, on arrête de suivre le déplacement du curseur
+     * When the cursor is released, I stop following the movement of the cursor
      * @param {PointerEvent} e
      */
     function onPointerUp(e) {
@@ -38,39 +38,14 @@ function menuResize(element, cb) {
 
 }
 
-menuResize(document.querySelector('.resize'), rafThrottle (function (x) {
-    //console.log(x);
+menuResize(document.querySelector('.resize'), function (x) {
     const sidebarWidthResult = x + "px";
     sessionStorage.setItem(sidebar_width, sidebarWidthResult)
     document.body.style.setProperty("--sidebar", sidebarWidthResult);
-}))
+    //console.log(sidebarWidthResult);
+})
 
 const sidebarWidthResult = sessionStorage.getItem(sidebar_width);
 if (sidebarWidthResult !== null) {
     document.body.style.setProperty("--sidebar", sidebarWidthResult);
-}
-
-function rafThrottle (callback) {
-    let requestId = null
-
-    let lastArgs
-
-    const later = (context) => () => {
-        requestId = null
-        callback.apply(context, lastArgs)
-    }
-
-    const throttled = function(...args) {
-        lastArgs = args;
-        if (requestId === null) {
-            requestId = requestAnimationFrame(later(this))
-        }
-    }
-
-    throttled.cancel = () => {
-        cancelAnimationFrame(requestId)
-        requestId = null
-    }
-
-    return throttled
 }
